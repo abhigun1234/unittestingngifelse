@@ -1,0 +1,20 @@
+<h2> {{name}} </h2>
+
+<h2> Enter your Adress{{ address}} </h2>
+<input type="text"  #adress>
+
+<h2> {{email}} </h2>
+<div *ngIf="isValid;else abc">
+content here ...
+</div>
+
+<ng-template #abc>other content here...</ng-template>
+<button (click)="changeAddress(adress.value)" >Change My Adress</button>
+
+<!-- <ul>
+<li *ngFor = "let sport of sports">
+
+{{sport}}
+</li>
+
+</ul> -->
