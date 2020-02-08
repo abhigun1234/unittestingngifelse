@@ -13,7 +13,7 @@ describe('Calculator', () => {
   it('equal then', () => {
     let clc=new Calculator()
    var result= clc.getArea(10,20)
-    expect(result).toEqual(200)
+    expect(result).toEqual(300)
 
   });
   it('less then', () => {
